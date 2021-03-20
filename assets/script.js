@@ -139,3 +139,27 @@ function displayUvIndex(lat, lon) {
           var uviDisplay = data.current.uvi;
           //create and put uvIndex on html
           currentUvi.text("UV Index: " + uviDisplay);
+
+             //statement to change UV Index color based on #
+
+        if (uviDisplay <= 2) {
+            currentUvi.addClass("favorable");
+            currentUvi.removeClass("moderate");
+            currentUvi.removeClass("severe");
+            console.log("1");
+          } else if (uviDisplay >= 3 && uviDisplay <= 7) {
+            currentUvi.removeClass("favorable");
+            currentUvi.addClass("moderate");
+            currentUvi.removeClass("severe");
+            console.log("2");
+          } else if (uviDisplay >= 8) {
+            currentUvi.removeClass("favorable");
+            currentUvi.removeClass("moderate");
+            currentUvi.addClass("severe");
+            console.log("3");
+          }
+          console.log(data.current);
+        });
+      }
+    });
+  }
