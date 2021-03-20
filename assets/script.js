@@ -190,3 +190,35 @@ function displayFiveDay(forecast) {
       daily.append(humidity);
     });
   };
+
+  // function to create previous search history list for
+// making the new elements clickable to bring up that previous search
+// limit precious search history list to 6
+function renderSearchHistory() {
+    historyEl.empty();
+    if (searchHistory.length === 6) {
+      searchHistory.shift();
+    }
+    for (let i = 0; i < searchHistory.length; i++) {
+      const historyItem = document.createElement("input");
+      historyItem.setAttribute("type", "text");
+      historyItem.setAttribute("readonly", true);
+      historyItem.setAttribute("class", "form-control d-block bg-white");
+      historyItem.setAttribute("value", searchHistory[i]);
+      historyItem.addEventListener("click", function () {
+        getCityName(historyItem.value);
+        getFiveDay(historyItem.value);
+      });
+      historyEl.append(historyItem);
+    }
+  }
+  
+  renderSearchHistory();
+  if (searchHistory.length > 0) {
+    getCityName(searchHistory[searchHistory.length - 1]);
+    getFiveDay(searchHistory[searchHistory.length - 1]);
+  }
+  
+  //event listeners for search form
+  
+  formEl.on("submit", formSubmitHandler);
