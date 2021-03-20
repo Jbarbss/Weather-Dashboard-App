@@ -10,13 +10,15 @@
 <a name="desc"></a>
 ## 1. Description
 
-I created an application that allows a user to save events for each hour of the day. 
-When the application is opened the current day is displayed at the top of the calendar.
-you can scroll down and are presented with time blocks for standard business hours and each time
-block is color coded to indicate whether it is in the past, present, or future.
-When you click on a time block, you can enter text about the certain event for that hour.
-If you click save the button, the text for that event is saved in local storage.
-Also if you refresh the page the saved events persist.
+I created an application that allows a user to see the weather outlook for multiple cities so they can plan a trip accordingly
+When the application is opened you see an input form asking to input city to search. after clicking search icon or enter button, user is am presented with current and future conditions for that city and that city is added to the search history. 
+When user views current weather conditions for that city
+they are presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+When use views UV Index, they are with a color that indicates whether the conditions are favorable, moderate, or severe.
+If User views the future weather conditions for that city
+they are presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+Finally when user clicks on a city in the search history
+they are again presented with current and future conditions for that city.
 
 
 
@@ -26,13 +28,13 @@ Also if you refresh the page the saved events persist.
 ### Click link to open in your browser.
 
 
-[github pages site] https://jbarbss.github.io/Work-Day-Scheduler/
+[github pages site] https://jbarbss.github.io/Weather-Dashboard-App/
 
-[github repository site] https://github.com/Jbarbss/Work-Day-Scheduler
+[github repository site] https://github.com/Jbarbss/Weather-Dashboard-App
 
 ### Deployed application screen shot
 
-![ScreenShot](images/Work-Day-Scheduler.jpg "Desktop")
+![ScreenShot](assets/images/Weather-Dashboard.jpg "Desktop")
 
 
 
@@ -42,8 +44,6 @@ Also if you refresh the page the saved events persist.
 Thank you to the following for their suggestions and insights.
 
 Ben Durham
-
-Steve Marsh
 
 Patrick Walker
 
