@@ -110,7 +110,7 @@ var getFiveDay = function (city) {
 
 //functions to display current weather on html
 function displayCity(data, searchCity) {
-    let rightNow = moment().subtract(10, "days").calendar();
+    let rightNow = moment().format("MMMM Do, YYYY");
     var iconCode = data.weather[0].icon;
     var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
     weatherIcon.attr("src", iconUrl);
