@@ -163,3 +163,30 @@ function displayUvIndex(lat, lon) {
       }
     });
   }
+
+// function to display 5 day forecast on html
+function displayFiveDay(forecast) {
+    $("#fiveDay").html("");
+    forecast.forEach(function (day) {
+      let daily = $("<div>");
+      daily.attr("class", "column col-2 h-auto text-left");
+      daily.attr("id", "dayBox");
+      let date = $("<h6>");
+      date.text(new Date(day.dt_txt).toLocaleDateString());
+      daily.append(date);
+      let icon5 = $("<img>");
+      var iconCode = day.weather[0].icon;
+      var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+      icon5.attr("src", iconUrl);
+      daily.append(icon5);
+      let temp = $("<h6>");
+      let tempRound = Math.round(day.main.temp);
+      temp.text("Temp:" + " " + tempRound + " °F");
+      daily.append(temp);
+  
+      let icon = $("#fiveDay").append(daily);
+      let humidity = $("<h6>");
+      humidity.text("Humidity:" + " " + day.main.humidity + " %");
+      daily.append(humidity);
+    });
+  };
