@@ -127,3 +127,15 @@ function displayCity(data, searchCity) {
     var lon = data.coord.lon;
     displayUvIndex(lat, lon);
   }
+
+  //fetch third api to get UV Index
+function displayUvIndex(lat, lon) {
+    var uvUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=imperial&appid=db2bc20d9d8e8916bcc4fa9a82d88562`;
+    fetch(uvUrl).then(function (response) {
+      if (response.ok) {
+        console.log(response);
+        return response.json().then(function (data) {
+          console.log(data);
+          var uviDisplay = data.current.uvi;
+          //create and put uvIndex on html
+          currentUvi.text("UV Index: " + uviDisplay);
