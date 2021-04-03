@@ -5,12 +5,12 @@ body {
     line-height: 1.5;
     font-size: 16px;
 }
+
 /* header */
 .hero {
     padding: 2% 0%;
     background-color: blue;
     color: whitesmoke;
-   
 }
 
 h1 {
@@ -25,13 +25,11 @@ h3 {
 }
 
 h2,
-
-
 h5,
 h6 {
     font-weight: 700;
     margin: 0;
-    
+
     line-height: 1.25;
 }
 
@@ -39,7 +37,7 @@ h6 {
 main {
     margin: 20px auto;
     width: 94%;
-    margin:0;
+    margin: 0;
 }
 
 p {
@@ -50,6 +48,7 @@ p {
     background-color: blue;
     color: white;
 }
+
 /* search element */
 .form-label {
     font-weight: 700;
@@ -59,34 +58,29 @@ p {
 /* current weather */
 .currentContainer {
     padding: 35px;
-   
 }
 
 .city-container {
     width: 80%;
 }
 
-.container{
+.container {
     padding-left: 0;
 }
 
 .row {
-
     padding: 10px;
 }
 
-
 /* 5 day forecast */
 #fiveDay {
-padding-right: 30px;
-
+    padding-right: 30px;
 }
-
 
 /* each column in 5 day forecast */
 .column {
-    padding:5px;
-  
+    padding: 5px;
+
     margin: 10px;
     background-color: blue;
     color: white;
@@ -95,25 +89,22 @@ padding-right: 30px;
 }
 
 .card {
-
     width: 80%;
 }
 
 #city-form {
-
-padding:10px;
+    padding: 10px;
 }
 
 /* for adding and removing class from uv index */
 .favorable {
-    background-color: rgb(34,139,34);
+    background-color: rgb(34, 139, 34);
 }
 
 .moderate {
-    background-color: rgb(255,255,51);
+    background-color: rgb(255, 255, 51);
 }
 
 .severe {
-    background-color: rgb(255,0,0);
+    background-color: rgb(255, 0, 0);
 }
-

@@ -3,6 +3,8 @@
 1. [ Description. ](#desc)
 2. [ Web Address. ](#web-address)
 3. [ Contributions. ](#contributions)
+4. [ Licensing. ](#licensing)
+
 
 
 
@@ -35,6 +37,8 @@ they are again presented with current and future conditions for that city.
 ### Deployed application screen shot
 
 ![ScreenShot](assets/images/Weather-Dashboard.jpg "Desktop")
+![ScreenShot](assets/images/Snip20210403_11.png "Desktop")
+
 
 
 
@@ -43,10 +47,23 @@ they are again presented with current and future conditions for that city.
 ## 3. Contributions
 Thank you to the following for their suggestions and insights.
 
-Ben Durham
+Ben Durham (https://github.com/bdurham227)
 
-Patrick Walker
+Gabe Thomas (https://github.com/samohtebag)
 
-Gabe Thomas
+Jason Barbanel (https://github.com/Jbarbss)
 
-Takuya Matsumoto
+Takuya Matsumoto (https://github.com/TakuyaMats)
+
+
+<a name="licensing"></a>
+## 4. Licensing
+
+
+Copyright (c) 2021 Jason Barbanel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
