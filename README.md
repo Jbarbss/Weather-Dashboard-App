@@ -51,7 +51,7 @@ Ben Durham (https://github.com/bdurham227)
 
 Gabe Thomas (https://github.com/samohtebag)
 
-Jason Barbanel (https://github.com/Jbarbss)
+Patrick Walker (https://github.com/pat31477)
 
 Takuya Matsumoto (https://github.com/TakuyaMats)
 
